@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+[![Rowe Wilson Frederisk Holme's github stats](https://github-readme-stats.vercel.app/api?username=Frederisk&count_private=true&theme=tokyonight&show_icons=true&bg_color=161b22)](https://github.com/anuraghazra/github-readme-stats) [![Rowe Wilson Frederisk Holme's top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Frederisk&theme=tokyonight&count_private=true&show_icons=true&layout=compact&bg_color=161b22&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
+
 <!--
 **Frederisk/Frederisk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
