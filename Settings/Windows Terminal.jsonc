@@ -3,22 +3,20 @@
     // Add custom actions and keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
-    "actions":
-    [
+    "actions": [
         // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
         // These two lines additionally bind them to Ctrl+C and Ctrl+V.
         // To learn more about selection, visit https://aka.ms/terminal-selection
         {
-            "command":
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
-            "keys": "ctrl+c"
+            "keys": "ctrl+shift+c"
         },
         {
             "command": "paste",
-            "keys": "ctrl+v"
+            "keys": "ctrl+shift+v"
         },
         // Press Ctrl+Shift+F to open the search box
         {
@@ -30,8 +28,7 @@
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
         {
-            "command":
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -39,21 +36,22 @@
             "keys": "alt+shift+d"
         }
     ],
-    "copyFormatting": "none",
+    "copyFormatting": true,
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "focusFollowMouse": true,
     "initialCols": 140,
     "initialRows": 35,
-    "profiles":
-    {
-        "defaults":
-        {
+    "profiles": {
+        "defaults": {
             "background": "#080f18",
-            "fontFace": "SauceCodePro Nerd Font",
-            "acrylicOpacity": 0.95,
+            // "fontFace": "SauceCodePro Nerd Font",
+            "font": {
+                "face": "SauceCodePro Nerd Font",
+            },
+            "acrylicOpacity": 0.5,
             "antialiasingMode": "cleartype",
-            "backgroundImage": null,
+            // "backgroundImage": null,
             "bellStyle": "all",
             "colorScheme": "Campbell",
             "cursorShape": "filledBox",
@@ -64,8 +62,7 @@
             "suppressApplicationTitle": false,
             "useAcrylic": true
         },
-        "list":
-        [
+        "list": [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -98,9 +95,9 @@
             }
         ]
     },
-    "schemes":
-    [
+    "schemes": [
         {
+            "name": "Campbell",
             "background": "#0C0C0C",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -116,7 +113,6 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
-            "name": "Campbell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -124,6 +120,7 @@
             "yellow": "#C19C00"
         },
         {
+            "name": "Campbell Powershell",
             "background": "#012456",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -139,7 +136,6 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
-            "name": "Campbell Powershell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -147,6 +143,7 @@
             "yellow": "#C19C00"
         },
         {
+            "name": "One Half Dark",
             "background": "#282C34",
             "black": "#282C34",
             "blue": "#61AFEF",
@@ -162,7 +159,6 @@
             "cyan": "#56B6C2",
             "foreground": "#DCDFE4",
             "green": "#98C379",
-            "name": "One Half Dark",
             "purple": "#C678DD",
             "red": "#E06C75",
             "selectionBackground": "#FFFFFF",
@@ -170,6 +166,7 @@
             "yellow": "#E5C07B"
         },
         {
+            "name": "One Half Light",
             "background": "#FAFAFA",
             "black": "#383A42",
             "blue": "#0184BC",
@@ -185,7 +182,6 @@
             "cyan": "#0997B3",
             "foreground": "#383A42",
             "green": "#50A14F",
-            "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
             "selectionBackground": "#FFFFFF",
@@ -193,6 +189,7 @@
             "yellow": "#C18301"
         },
         {
+            "name": "Solarized Dark",
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -208,7 +205,6 @@
             "cyan": "#2AA198",
             "foreground": "#839496",
             "green": "#859900",
-            "name": "Solarized Dark",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -216,6 +212,7 @@
             "yellow": "#B58900"
         },
         {
+            "name": "Solarized Light",
             "background": "#FDF6E3",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -231,7 +228,6 @@
             "cyan": "#2AA198",
             "foreground": "#657B83",
             "green": "#859900",
-            "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -239,6 +235,7 @@
             "yellow": "#B58900"
         },
         {
+            "name": "Tango Dark",
             "background": "#000000",
             "black": "#000000",
             "blue": "#3465A4",
@@ -254,7 +251,6 @@
             "cyan": "#06989A",
             "foreground": "#D3D7CF",
             "green": "#4E9A06",
-            "name": "Tango Dark",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -262,6 +258,7 @@
             "yellow": "#C4A000"
         },
         {
+            "name": "Tango Light",
             "background": "#FFFFFF",
             "black": "#000000",
             "blue": "#3465A4",
@@ -277,7 +274,6 @@
             "cyan": "#06989A",
             "foreground": "#555753",
             "green": "#4E9A06",
-            "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -285,6 +281,7 @@
             "yellow": "#C4A000"
         },
         {
+            "name": "Vintage",
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -300,7 +297,6 @@
             "cyan": "#008080",
             "foreground": "#C0C0C0",
             "green": "#008000",
-            "name": "Vintage",
             "purple": "#800080",
             "red": "#800000",
             "selectionBackground": "#FFFFFF",
