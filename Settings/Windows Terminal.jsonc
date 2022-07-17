@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     // Add custom actions and keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
@@ -36,7 +37,7 @@
             "keys": "alt+shift+d"
         }
     ],
-    "copyFormatting": true,
+    "copyFormatting": "all",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "focusFollowMouse": true,
@@ -45,11 +46,6 @@
     "profiles": {
         "defaults": {
             "background": "#080f18",
-            // "fontFace": "SauceCodePro Nerd Font",
-            "font": {
-                "face": "SauceCodePro Nerd Font",
-            },
-            "acrylicOpacity": 0.5,
             "antialiasingMode": "cleartype",
             // "backgroundImage": "desktopWallpaper",
             // "backgroundImageOpacity": 0.1,
@@ -57,7 +53,11 @@
             "colorScheme": "Campbell",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
+            "font": {
+                "face": "SauceCodePro Nerd Font Mono"
+            },
             "historySize": 10240,
+            "opacity": 50,
             "padding": "8",
             "scrollbarState": "visible",
             "suppressApplicationTitle": false,
@@ -65,60 +65,69 @@
         },
         "list": [
             {
+                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\PowerShell_Core_6.0_icon.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageStretchMode": "none",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore",
-                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\PowerShell_Core_6.0_icon.png",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity": 0.5
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt",
                 "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\Command-flat-icon.png",
                 "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.5,
                 "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity": 0.5
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
             },
             {
+                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\Ubuntu-orange-hex-icon.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageStretchMode": "none",
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\Ubuntu-orange-hex-icon.png",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity": 0.5
+                "source": "Windows.Terminal.Wsl"
             },
             {
+                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\Azure-icon.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageStretchMode": "none",
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure",
-                "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\Azure-icon.png",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity": 0.5
+                "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell",
                 "backgroundImage": "C:\\Users\\Frederisk\\Pictures\\WindowsTerminal\\PowerShell_5.0_icon.png",
                 "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.5,
                 "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity": 0.5
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{b30a29a9-6126-58a5-976e-db3083e1f7e3}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{12ac9774-0add-5712-a89b-b0cc19b9d4fa}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
     "schemes": [
         {
-            "name": "Campbell",
             "background": "#0C0C0C",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -134,6 +143,7 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
+            "name": "Campbell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -141,7 +151,6 @@
             "yellow": "#C19C00"
         },
         {
-            "name": "Campbell Powershell",
             "background": "#012456",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -157,6 +166,7 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
+            "name": "Campbell Powershell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -164,7 +174,6 @@
             "yellow": "#C19C00"
         },
         {
-            "name": "One Half Dark",
             "background": "#282C34",
             "black": "#282C34",
             "blue": "#61AFEF",
@@ -180,6 +189,7 @@
             "cyan": "#56B6C2",
             "foreground": "#DCDFE4",
             "green": "#98C379",
+            "name": "One Half Dark",
             "purple": "#C678DD",
             "red": "#E06C75",
             "selectionBackground": "#FFFFFF",
@@ -187,7 +197,6 @@
             "yellow": "#E5C07B"
         },
         {
-            "name": "One Half Light",
             "background": "#FAFAFA",
             "black": "#383A42",
             "blue": "#0184BC",
@@ -203,6 +212,7 @@
             "cyan": "#0997B3",
             "foreground": "#383A42",
             "green": "#50A14F",
+            "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
             "selectionBackground": "#FFFFFF",
@@ -210,7 +220,6 @@
             "yellow": "#C18301"
         },
         {
-            "name": "Solarized Dark",
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -226,6 +235,7 @@
             "cyan": "#2AA198",
             "foreground": "#839496",
             "green": "#859900",
+            "name": "Solarized Dark",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -233,7 +243,6 @@
             "yellow": "#B58900"
         },
         {
-            "name": "Solarized Light",
             "background": "#FDF6E3",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -249,6 +258,7 @@
             "cyan": "#2AA198",
             "foreground": "#657B83",
             "green": "#859900",
+            "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -256,7 +266,6 @@
             "yellow": "#B58900"
         },
         {
-            "name": "Tango Dark",
             "background": "#000000",
             "black": "#000000",
             "blue": "#3465A4",
@@ -272,6 +281,7 @@
             "cyan": "#06989A",
             "foreground": "#D3D7CF",
             "green": "#4E9A06",
+            "name": "Tango Dark",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -279,7 +289,6 @@
             "yellow": "#C4A000"
         },
         {
-            "name": "Tango Light",
             "background": "#FFFFFF",
             "black": "#000000",
             "blue": "#3465A4",
@@ -295,6 +304,7 @@
             "cyan": "#06989A",
             "foreground": "#555753",
             "green": "#4E9A06",
+            "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -302,7 +312,6 @@
             "yellow": "#C4A000"
         },
         {
-            "name": "Vintage",
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -318,6 +327,7 @@
             "cyan": "#008080",
             "foreground": "#C0C0C0",
             "green": "#008000",
+            "name": "Vintage",
             "purple": "#800080",
             "red": "#800000",
             "selectionBackground": "#FFFFFF",
