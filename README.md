@@ -6,19 +6,19 @@
 [![Rowe Wilson Frederisk Holme's github stats](https://github-readme-stats.vercel.app/api?username=Frederisk&count_private=true&rank_icon=percentile&theme=tokyonight&show_icons=true&bg_color=00000000)](https://github.com/anuraghazra/github-readme-stats) [![Rowe Wilson Frederisk Holme's top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Frederisk&theme=tokyonight&count_private=true&show_icons=true&layout=compact&bg_color=00000000&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
 
 ```plain
-      |\
-      | \      _____            /\
-/-__| |     _--.....---_       / |
-|   \-_\ _--..............--_ /  |_-
-   \_\__\..............._---__/__ /
-_--     /............../     \   \
-------|....___-------__\_____/___/
-   ___|----___-------__________  \_
-_- ____----...................----_\
-/---..____________--------___....._/
-\-----:::|------\_ /----|::::\__---
-      \\:::||0  /  \||0  / |:::/\
-      |:\::| \--     \--  /::|:\
+      |\                               root@RoweWilsonFrederiskHolme
+      | \      _____            /\     -----------------------------
+/-__| |     _--.....---_       / |     OS: Realiras
+|   \-_\ _--..............--_ /  |_-   Host: Homo Sapiens Sapines
+   \_\__\..............._---__/__ /    Kernel: Carbon-based
+_--     /............../     \   \     Uptime: EveryDay
+------|....___-------__\_____/___/     Packages: 0 (none)
+   ___|----___-------__________  \_    Shell:
+_- ____----...................----_\   CPU:
+/---..____________--------___....._/   Memory:
+\-----:::|------\_ /----|::::\__---    
+      \\:::||0  /  \||0  / |:::/\      ~~!!@@##$$%%^^&&
+      |:\::| \--     \--  /::|:\       **(())__++--==??
       |::|::\    _ _     |::|:::|
       /::|::|-_   -   __|:::\::::\
    _/::::\::/##------##\::::|::::\
