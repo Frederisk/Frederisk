@@ -9,7 +9,7 @@
     |\
     | \        _____            /\      root@RoweWilsonFrederiskHolme
 /-__| |     _--.....---_       / |      -----------------------------
-|   \-_\ _--..............--_ /  |_-    OS: Realiras
+|   \-_\ _--..............--_ /  |_-    OS: Realitas
  \_\__\.................._---__/__ /    Host: Homo Sapiens Sapines
 _--     /.............../     \   \     Kernel: Carbon-based
 ------|....___--------__\_____/___/     Uptime: EveryDay
