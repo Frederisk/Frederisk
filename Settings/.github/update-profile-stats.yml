@@ -1,0 +1,43 @@
+name: Update README profile status to R2
+on:
+  schedule:
+    - cron: "0 0/12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&count_private=true&rank_icon=percentile&theme=dark&show_icons=true&bg_color=00000000
+          path: stats.svg
+          token: ${{ secrets.PROFILE_STATUS_PAT }}
+
+      - name: Generate top langs card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&theme=dark&count_private=true&show_icons=true&layout=compact&bg_color=00000000&langs_count=8
+          path: top-langs.svg
+          token: ${{ secrets.PROFILE_STATUS_PAT }}
+
+      - name: Upload to Cloudflare R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          aws s3 cp stats.svg s3://${{ secrets.R2_BUCKET_NAME }}/profile/stats.svg \
+            --endpoint-url https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --content-type "image/svg+xml" \
+            --cache-control "no-cache, max-age=0"
+
+          aws s3 cp top-langs.svg s3://${{ secrets.R2_BUCKET_NAME }}/profile/top-langs.svg \
+            --endpoint-url https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --content-type "image/svg+xml" \
+            --cache-control "no-cache, max-age=0"
