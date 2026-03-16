@@ -24,7 +24,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&theme=dark&show_icons=true&layout=compact&bg_color=00000000&langs_count=8&hide=jupyter%20notebook
           path: top-langs.svg
-          token: ${{ secrets.PROFILE_STATUS_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }} # public repos only
 
       - name: Upload to Cloudflare R2
         env:
